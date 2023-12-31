@@ -1,5 +1,9 @@
-console.log("Hi this is a test");
+const ordenar  = (array) => {
+    const myArray = [...array];
+    return myArray.sort((a,b) => a-b)
+}
 
-const array = [5,7,9,3,0,3,14,6,2,7];
 
-console.log(array.sort((a,b) => a-b));
+module.exports = {
+    ordenar: ordenar
+}
